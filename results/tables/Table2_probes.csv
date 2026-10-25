@@ -1,0 +1,5 @@
+feature_set,accuracy,multiple_of_chance
+Capture timestamp,0.969,6.8
+Time of day (date removed),0.672,4.7
+Capture device,0.378,2.6
+Image dimensions,0.363,2.5

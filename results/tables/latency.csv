@@ -1,0 +1,5 @@
+model,params_m,fp32_mb,latency_ms_fp32_bs1,device,fp16_mb
+vgg16,134.3,512.3,13.2,Tesla T4,256.1
+resnet50,23.5,89.9,6.0,Tesla T4,45.0
+vit_base_patch16_224,85.8,327.3,15.3,Tesla T4,163.7
+swin_tiny_patch4_window7_224,27.5,105.0,10.9,Tesla T4,52.5

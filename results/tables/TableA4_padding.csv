@@ -1,0 +1,3 @@
+model,resizing,protocol,accuracy,macro_f1
+Swin-T,squash,SW (partition 0),0.828,0.7478
+Swin-T,pad,SW (partition 0),0.8263,0.7441

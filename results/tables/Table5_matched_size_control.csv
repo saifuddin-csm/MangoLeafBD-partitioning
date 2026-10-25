@@ -1,0 +1,6 @@
+condition,training_images,accuracy
+"Leaf-wise, full training portion",2546,0.9985
+"Leaf-wise, matched training portion",1569,0.9991
+Session-wise,1576,0.728
+Attributable to training-set size,,-0.0007
+Attributable to the partition,,0.2712

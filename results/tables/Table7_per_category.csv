@@ -1,0 +1,8 @@
+category,precision,recall,f1,f1_sd_folds,f1_min_fold,support_pooled,status
+Cutting Weevil,0.98,0.993,0.986,0.041,0.87,2500,reliable
+Healthy,0.789,1.0,0.882,0.118,0.711,2500,borderline
+Bacterial Canker,0.835,0.924,0.877,0.245,0.269,2500,borderline
+Die Back,0.969,0.658,0.784,0.309,0.066,2500,not reliable
+Anthracnose,0.703,0.88,0.782,0.26,0.223,2500,not reliable
+Powdery Mildew,0.553,0.752,0.638,0.238,0.267,2500,not reliable
+Sooty Mould,0.228,0.074,0.111,0.18,0.0,2500,not reliable

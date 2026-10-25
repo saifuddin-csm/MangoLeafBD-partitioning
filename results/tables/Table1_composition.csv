@@ -1,0 +1,10 @@
+cls,images,leaf_groups,sessions,first_capture,last_capture,in_three_protocol_study
+Anthracnose,500,257,4,2021-10-08,2021-10-11,yes
+Bacterial Canker,500,283,2,2021-11-06,2021-11-06,yes
+Cutting Weevil,500,93,4,2021-10-11,2021-10-11,yes
+Die Back,500,320,4,2021-10-27,2021-11-29,yes
+Gall Midge,500,186,1,2021-11-06,2021-11-06,excluded
+Healthy,500,412,2,2021-12-31,2021-12-31,yes
+Powdery Mildew,500,233,3,2021-11-07,2021-11-09,yes
+Sooty Mould,500,286,3,2021-11-08,2021-12-12,yes
+Total,4000,2070,23,,,

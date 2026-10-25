@@ -1,0 +1,13 @@
+protocol,pair,delta,ci_lo,ci_hi,folds_first_better,folds_second_better,n,ci_excludes_0
+SW,Swin-T - ViT-B/16,0.0128,0.004,0.0209,5,5,10,True
+SW,Swin-T - ResNet-50,0.0225,0.0143,0.0304,5,5,10,True
+SW,Swin-T - VGG-16,0.0227,0.0155,0.0304,7,3,10,True
+SW,ViT-B/16 - ResNet-50,0.0097,0.0021,0.0175,5,5,10,True
+SW,ViT-B/16 - VGG-16,0.0099,0.0022,0.0182,4,6,10,True
+SW,ResNet-50 - VGG-16,0.0002,-0.0086,0.0096,5,5,10,False
+LW,Swin-T - ViT-B/16,-0.001,-0.0052,0.002,0,1,3,False
+LW,Swin-T - ResNet-50,-0.0006,-0.0049,0.003,1,1,3,False
+LW,Swin-T - VGG-16,-0.0006,-0.0047,0.0026,1,1,3,False
+LW,ViT-B/16 - ResNet-50,0.0005,-0.0019,0.0032,1,1,3,False
+LW,ViT-B/16 - VGG-16,0.0005,-0.0017,0.0027,1,0,3,False
+LW,ResNet-50 - VGG-16,0.0,-0.0025,0.0021,2,1,3,False

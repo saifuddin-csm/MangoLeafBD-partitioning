@@ -1,0 +1,630 @@
+{
+  "audit": {
+    "images": 4000,
+    "categories": 8,
+    "distinct_pixel_dimensions": 93,
+    "images_at_3_dominant_dimensions": 3873,
+    "exact_pixel_duplicate_images": 21,
+    "duplicate_sets_spanning_categories": 0,
+    "capture_devices_from_exif": 4,
+    "images_with_usable_timestamp": 4000,
+    "leaf_groups": 2070,
+    "mean_images_per_leaf_group": 1.93,
+    "singleton_leaf_groups_pct": 61.3,
+    "sessions": 23
+  },
+  "working_set": {
+    "classes": [
+      "Anthracnose",
+      "Bacterial Canker",
+      "Cutting Weevil",
+      "Die Back",
+      "Healthy",
+      "Powdery Mildew",
+      "Sooty Mould"
+    ],
+    "excluded": [
+      "Gall Midge"
+    ],
+    "n_disorders": 6,
+    "images": 3500,
+    "leaf_groups": 1884,
+    "sessions": 22,
+    "excluded_session_minutes": {
+      "Gall Midge": 52
+    }
+  },
+  "probes": {
+    "chance": 0.143,
+    "Capture timestamp": 0.969,
+    "Time of day (date removed)": 0.672,
+    "Capture device": 0.378,
+    "Image dimensions": 0.363
+  },
+  "partitions": {
+    "RP": {
+      "train": 2520.0,
+      "train_min": 2520,
+      "train_max": 2520,
+      "val": 280.0,
+      "test": 700.0,
+      "test_min": 700,
+      "test_max": 700,
+      "kappa_leaf": 0.592,
+      "kappa_session": 1.0,
+      "n_splits": 3
+    },
+    "LW": {
+      "train": 2546.333,
+      "train_min": 2525,
+      "train_max": 2567,
+      "val": 282.333,
+      "test": 671.333,
+      "test_min": 645,
+      "test_max": 691,
+      "kappa_leaf": 0.0,
+      "kappa_session": 1.0,
+      "n_splits": 3
+    },
+    "SW": {
+      "train": 1576.4,
+      "train_min": 1146,
+      "train_max": 2028,
+      "val": 173.6,
+      "test": 1750.0,
+      "test_min": 1296,
+      "test_max": 2204,
+      "kappa_leaf": 0.0,
+      "kappa_session": 0.0,
+      "n_splits": 10
+    }
+  },
+  "matched_size_n": 1569,
+  "main": {
+    "mean": {
+      "RP": 0.9992857142857142,
+      "LW": 0.9984707900931366,
+      "SW": 0.7279528532536003
+    },
+    "RP_minus_SW": 0.27133286103211396,
+    "LW_minus_SW": 0.2705179368395363,
+    "sd_range": {
+      "RP": [
+        0.0,
+        0.002857142857142836
+      ],
+      "LW": [
+        0.0014755695822029561,
+        0.00358046678567213
+      ],
+      "SW": [
+        0.11115970526019957,
+        0.1371054013496843
+      ]
+    },
+    "per_model": {
+      "Swin-T": {
+        "family": "Attention",
+        "RP_mean": 1.0,
+        "RP_sd": 0.0,
+        "RP_n": 3.0,
+        "LW_mean": 0.9979,
+        "LW_sd": 0.0036,
+        "LW_n": 3.0,
+        "SW_mean": 0.7424,
+        "SW_sd": 0.1371,
+        "SW_n": 10.0,
+        "SW_min": 0.4043,
+        "SW_max": 0.8881,
+        "SW_ci_lo": 0.7314,
+        "SW_ci_hi": 0.753,
+        "RP_minus_SW": 0.2576,
+        "LW_minus_SW": 0.2555
+      },
+      "ViT-B/16": {
+        "family": "Attention",
+        "RP_mean": 1.0,
+        "RP_sd": 0.0,
+        "RP_n": 3.0,
+        "LW_mean": 0.999,
+        "LW_sd": 0.0018,
+        "LW_n": 3.0,
+        "SW_mean": 0.7297,
+        "SW_sd": 0.1194,
+        "SW_n": 10.0,
+        "SW_min": 0.4869,
+        "SW_max": 0.8914,
+        "SW_ci_lo": 0.7182,
+        "SW_ci_hi": 0.7412,
+        "RP_minus_SW": 0.2703,
+        "LW_minus_SW": 0.2693
+      },
+      "ResNet-50": {
+        "family": "CNN",
+        "RP_mean": 1.0,
+        "RP_sd": 0.0,
+        "RP_n": 3.0,
+        "LW_mean": 0.9985,
+        "LW_sd": 0.0015,
+        "LW_n": 3.0,
+        "SW_mean": 0.7199,
+        "SW_sd": 0.1323,
+        "SW_n": 10.0,
+        "SW_min": 0.4406,
+        "SW_max": 0.861,
+        "SW_ci_lo": 0.7087,
+        "SW_ci_hi": 0.7312,
+        "RP_minus_SW": 0.2801,
+        "LW_minus_SW": 0.2786
+      },
+      "VGG-16": {
+        "family": "CNN",
+        "RP_mean": 0.9971,
+        "RP_sd": 0.0029,
+        "RP_n": 3.0,
+        "LW_mean": 0.9985,
+        "LW_sd": 0.0016,
+        "LW_n": 3.0,
+        "SW_mean": 0.7198,
+        "SW_sd": 0.1112,
+        "SW_n": 10.0,
+        "SW_min": 0.5748,
+        "SW_max": 0.8698,
+        "SW_ci_lo": 0.7079,
+        "SW_ci_hi": 0.7311,
+        "RP_minus_SW": 0.2774,
+        "LW_minus_SW": 0.2787
+      }
+    },
+    "n_sw_folds": 10,
+    "n_seeds": 3
+  },
+  "control": {
+    "LW_full": 0.9984707900931366,
+    "LW_matched": 0.9991419387062485,
+    "SW": 0.7279528532536003,
+    "loss": 0.2705179368395363,
+    "size": -0.0006711486131119049,
+    "partition": 0.2711890854526482,
+    "partition_pct": 100.24809763853479,
+    "reduction_pct": 38.3819871710957
+  },
+  "ranking": {
+    "spread": {
+      "LW": 0.001033591731266048,
+      "SW": 0.02266797336605575
+    },
+    "table": [
+      {
+        "model": "Swin-T",
+        "LW_accuracy": 0.9979,
+        "LW_rank": 4.0,
+        "SW_accuracy": 0.7424,
+        "SW_sd": 0.1371,
+        "SW_mean_rank": 2.3,
+        "SW_best_in_folds": 4
+      },
+      {
+        "model": "ViT-B/16",
+        "LW_accuracy": 0.999,
+        "LW_rank": 1.0,
+        "SW_accuracy": 0.7297,
+        "SW_sd": 0.1194,
+        "SW_mean_rank": 2.6,
+        "SW_best_in_folds": 2
+      },
+      {
+        "model": "ResNet-50",
+        "LW_accuracy": 0.9985,
+        "LW_rank": 2.0,
+        "SW_accuracy": 0.7199,
+        "SW_sd": 0.1323,
+        "SW_mean_rank": 2.5,
+        "SW_best_in_folds": 3
+      },
+      {
+        "model": "VGG-16",
+        "LW_accuracy": 0.9985,
+        "LW_rank": 3.0,
+        "SW_accuracy": 0.7198,
+        "SW_sd": 0.1112,
+        "SW_mean_rank": 2.6,
+        "SW_best_in_folds": 1
+      }
+    ],
+    "paired_SW": [
+      {
+        "protocol": "SW",
+        "pair": "Swin-T - ViT-B/16",
+        "delta": 0.0128,
+        "ci_lo": 0.004,
+        "ci_hi": 0.0209,
+        "folds_first_better": 5,
+        "folds_second_better": 5,
+        "n": 10,
+        "ci_excludes_0": true
+      },
+      {
+        "protocol": "SW",
+        "pair": "Swin-T - ResNet-50",
+        "delta": 0.0225,
+        "ci_lo": 0.0143,
+        "ci_hi": 0.0304,
+        "folds_first_better": 5,
+        "folds_second_better": 5,
+        "n": 10,
+        "ci_excludes_0": true
+      },
+      {
+        "protocol": "SW",
+        "pair": "Swin-T - VGG-16",
+        "delta": 0.0227,
+        "ci_lo": 0.0155,
+        "ci_hi": 0.0304,
+        "folds_first_better": 7,
+        "folds_second_better": 3,
+        "n": 10,
+        "ci_excludes_0": true
+      },
+      {
+        "protocol": "SW",
+        "pair": "ViT-B/16 - ResNet-50",
+        "delta": 0.0097,
+        "ci_lo": 0.0021,
+        "ci_hi": 0.0175,
+        "folds_first_better": 5,
+        "folds_second_better": 5,
+        "n": 10,
+        "ci_excludes_0": true
+      },
+      {
+        "protocol": "SW",
+        "pair": "ViT-B/16 - VGG-16",
+        "delta": 0.0099,
+        "ci_lo": 0.0022,
+        "ci_hi": 0.0182,
+        "folds_first_better": 4,
+        "folds_second_better": 6,
+        "n": 10,
+        "ci_excludes_0": true
+      },
+      {
+        "protocol": "SW",
+        "pair": "ResNet-50 - VGG-16",
+        "delta": 0.0002,
+        "ci_lo": -0.0086,
+        "ci_hi": 0.0096,
+        "folds_first_better": 5,
+        "folds_second_better": 5,
+        "n": 10,
+        "ci_excludes_0": false
+      }
+    ],
+    "n_folds": 10
+  },
+  "lr_sweep": {
+    "table": [
+      {
+        "model": "VGG-16",
+        "lr": 0.0003,
+        "val_acc": 1.0,
+        "SW_accuracy_p0": 0.7709,
+        "rank_within_lr": 2.0
+      },
+      {
+        "model": "VGG-16",
+        "lr": 0.0001,
+        "val_acc": 1.0,
+        "SW_accuracy_p0": 0.7586,
+        "rank_within_lr": 3.0
+      },
+      {
+        "model": "VGG-16",
+        "lr": 0.001,
+        "val_acc": 0.9639,
+        "SW_accuracy_p0": 0.7649,
+        "rank_within_lr": 2.0
+      },
+      {
+        "model": "ResNet-50",
+        "lr": 0.0003,
+        "val_acc": 1.0,
+        "SW_accuracy_p0": 0.736,
+        "rank_within_lr": 4.0
+      },
+      {
+        "model": "ResNet-50",
+        "lr": 0.0001,
+        "val_acc": 0.9924,
+        "SW_accuracy_p0": 0.7277,
+        "rank_within_lr": 4.0
+      },
+      {
+        "model": "ResNet-50",
+        "lr": 0.001,
+        "val_acc": 1.0,
+        "SW_accuracy_p0": 0.7483,
+        "rank_within_lr": 4.0
+      },
+      {
+        "model": "ViT-B/16",
+        "lr": 0.0003,
+        "val_acc": 1.0,
+        "SW_accuracy_p0": 0.7557,
+        "rank_within_lr": 3.0
+      },
+      {
+        "model": "ViT-B/16",
+        "lr": 0.0001,
+        "val_acc": 1.0,
+        "SW_accuracy_p0": 0.8011,
+        "rank_within_lr": 2.0
+      },
+      {
+        "model": "ViT-B/16",
+        "lr": 0.001,
+        "val_acc": 0.997,
+        "SW_accuracy_p0": 0.7526,
+        "rank_within_lr": 3.0
+      },
+      {
+        "model": "Swin-T",
+        "lr": 0.0003,
+        "val_acc": 1.0,
+        "SW_accuracy_p0": 0.828,
+        "rank_within_lr": 1.0
+      },
+      {
+        "model": "Swin-T",
+        "lr": 0.0001,
+        "val_acc": 1.0,
+        "SW_accuracy_p0": 0.8283,
+        "rank_within_lr": 1.0
+      },
+      {
+        "model": "Swin-T",
+        "lr": 0.001,
+        "val_acc": 1.0,
+        "SW_accuracy_p0": 0.8314,
+        "rank_within_lr": 1.0
+      }
+    ],
+    "best_lr_by_val": {
+      "ResNet-50": 0.0003,
+      "Swin-T": 0.0003,
+      "VGG-16": 0.0003,
+      "ViT-B/16": 0.0003
+    },
+    "top_model_per_lr": {
+      "0.0001": [
+        "Swin-T"
+      ],
+      "0.0003": [
+        "Swin-T"
+      ],
+      "0.001": [
+        "Swin-T"
+      ]
+    }
+  },
+  "deployed_model": "Swin-T",
+  "per_class": {
+    "rule": "precision and recall >= 0.9; borderline if F1 >= 0.8",
+    "reliable": [
+      "Cutting Weevil"
+    ],
+    "borderline": [
+      "Healthy",
+      "Bacterial Canker"
+    ],
+    "not_reliable": [
+      "Die Back",
+      "Anthracnose",
+      "Powdery Mildew",
+      "Sooty Mould"
+    ],
+    "table": [
+      {
+        "category": "Cutting Weevil",
+        "precision": 0.98,
+        "recall": 0.993,
+        "f1": 0.986,
+        "f1_sd_folds": 0.041,
+        "f1_min_fold": 0.87,
+        "support_pooled": 2500,
+        "status": "reliable"
+      },
+      {
+        "category": "Healthy",
+        "precision": 0.789,
+        "recall": 1.0,
+        "f1": 0.882,
+        "f1_sd_folds": 0.118,
+        "f1_min_fold": 0.711,
+        "support_pooled": 2500,
+        "status": "borderline"
+      },
+      {
+        "category": "Bacterial Canker",
+        "precision": 0.835,
+        "recall": 0.924,
+        "f1": 0.877,
+        "f1_sd_folds": 0.245,
+        "f1_min_fold": 0.269,
+        "support_pooled": 2500,
+        "status": "borderline"
+      },
+      {
+        "category": "Die Back",
+        "precision": 0.969,
+        "recall": 0.658,
+        "f1": 0.784,
+        "f1_sd_folds": 0.309,
+        "f1_min_fold": 0.066,
+        "support_pooled": 2500,
+        "status": "not reliable"
+      },
+      {
+        "category": "Anthracnose",
+        "precision": 0.703,
+        "recall": 0.88,
+        "f1": 0.782,
+        "f1_sd_folds": 0.26,
+        "f1_min_fold": 0.223,
+        "support_pooled": 2500,
+        "status": "not reliable"
+      },
+      {
+        "category": "Powdery Mildew",
+        "precision": 0.553,
+        "recall": 0.752,
+        "f1": 0.638,
+        "f1_sd_folds": 0.238,
+        "f1_min_fold": 0.267,
+        "support_pooled": 2500,
+        "status": "not reliable"
+      },
+      {
+        "category": "Sooty Mould",
+        "precision": 0.228,
+        "recall": 0.074,
+        "f1": 0.111,
+        "f1_sd_folds": 0.18,
+        "f1_min_fold": 0.0,
+        "support_pooled": 2500,
+        "status": "not reliable"
+      }
+    ]
+  },
+  "calibration_deployed": {
+    "LW": {
+      "T_val": 0.25,
+      "T_cross": NaN,
+      "acc": 0.9979,
+      "mean_conf": 0.9556000232696533,
+      "ECE_uncal": 0.0439,
+      "ECE_Tval": 0.0019,
+      "ECE_Tcross": NaN
+    },
+    "SW": {
+      "T_val": 0.262,
+      "T_cross": 1.3,
+      "acc": 0.7424,
+      "mean_conf": 0.7756999731063843,
+      "ECE_uncal": 0.1172,
+      "ECE_Tval": 0.213,
+      "ECE_Tcross": 0.1553
+    }
+  },
+  "referral_deployed": [
+    {
+      "model": "Swin-T",
+      "target": 0.95,
+      "theta": 0.7695,
+      "coverage": 0.4457,
+      "coverage_sd": 0.3255,
+      "accuracy": 0.8907,
+      "accuracy_sd": 0.1251,
+      "folds_met": 4,
+      "n": 10,
+      "coverage_oracle": 0.4324,
+      "referred_pct": 55.4321
+    },
+    {
+      "model": "Swin-T",
+      "target": 0.9,
+      "theta": 0.6762,
+      "coverage": 0.5569,
+      "coverage_sd": 0.3611,
+      "accuracy": 0.8585,
+      "accuracy_sd": 0.1203,
+      "folds_met": 4,
+      "n": 10,
+      "coverage_oracle": 0.5279,
+      "referred_pct": 44.3073
+    },
+    {
+      "model": "Swin-T",
+      "target": 0.85,
+      "theta": 0.5918,
+      "coverage": 0.6335,
+      "coverage_sd": 0.3605,
+      "accuracy": 0.8455,
+      "accuracy_sd": 0.1132,
+      "folds_met": 4,
+      "n": 10,
+      "coverage_oracle": 0.6213,
+      "referred_pct": 36.6515
+    },
+    {
+      "model": "Swin-T",
+      "target": 0.8,
+      "theta": 0.4247,
+      "coverage": 0.7988,
+      "coverage_sd": 0.2576,
+      "accuracy": 0.7904,
+      "accuracy_sd": 0.1368,
+      "folds_met": 5,
+      "n": 10,
+      "coverage_oracle": 0.7031,
+      "referred_pct": 20.123
+    }
+  ],
+  "region_ablation": {
+    "full": 0.736,
+    "centre_only": 0.5769,
+    "centre_removed": 0.589
+  },
+  "tolerance": {
+    "3": 0.9985,
+    "2": 1.0,
+    "4": 0.9985,
+    "5": 0.992
+  },
+  "padding": [
+    {
+      "model": "Swin-T",
+      "resizing": "squash",
+      "protocol": "SW (partition 0)",
+      "accuracy": 0.828,
+      "macro_f1": 0.7478
+    },
+    {
+      "model": "Swin-T",
+      "resizing": "pad",
+      "protocol": "SW (partition 0)",
+      "accuracy": 0.8263,
+      "macro_f1": 0.7441
+    }
+  ],
+  "deployment_cost": {
+    "VGG-16": {
+      "params_m": 134.3,
+      "fp32_mb": 512.3,
+      "fp16_mb": 256.1,
+      "latency_ms_fp32_bs1": 13.2,
+      "SW_accuracy": 0.7198
+    },
+    "ResNet-50": {
+      "params_m": 23.5,
+      "fp32_mb": 89.9,
+      "fp16_mb": 45.0,
+      "latency_ms_fp32_bs1": 6.0,
+      "SW_accuracy": 0.7199
+    },
+    "ViT-B/16": {
+      "params_m": 85.8,
+      "fp32_mb": 327.3,
+      "fp16_mb": 163.7,
+      "latency_ms_fp32_bs1": 15.3,
+      "SW_accuracy": 0.7297
+    },
+    "Swin-T": {
+      "params_m": 27.5,
+      "fp32_mb": 105.0,
+      "fp16_mb": 52.5,
+      "latency_ms_fp32_bs1": 10.9,
+      "SW_accuracy": 0.7424
+    }
+  }
+}

@@ -1,0 +1,4 @@
+protocol,train,train_min,train_max,val,test,test_min,test_max,kappa_leaf,kappa_session,n_splits
+RP,2520.0,2520,2520,280.0,700.0,700,700,0.592,1.0,3
+LW,2546.333,2525,2567,282.333,671.333,645,691,0.0,1.0,3
+SW,1576.4,1146,2028,173.6,1750.0,1296,2204,0.0,0.0,10

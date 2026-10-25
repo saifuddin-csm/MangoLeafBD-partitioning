@@ -1,0 +1,5 @@
+model,LW_accuracy,LW_rank,SW_accuracy,SW_sd,SW_mean_rank,SW_best_in_folds
+Swin-T,0.9979,4.0,0.7424,0.1371,2.3,4
+ViT-B/16,0.999,1.0,0.7297,0.1194,2.6,2
+ResNet-50,0.9985,2.0,0.7199,0.1323,2.5,3
+VGG-16,0.9985,3.0,0.7198,0.1112,2.6,1

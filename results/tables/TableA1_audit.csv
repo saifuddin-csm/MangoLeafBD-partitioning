@@ -1,0 +1,13 @@
+,value
+images,4000.0
+categories,8.0
+distinct_pixel_dimensions,93.0
+images_at_3_dominant_dimensions,3873.0
+exact_pixel_duplicate_images,21.0
+duplicate_sets_spanning_categories,0.0
+capture_devices_from_exif,4.0
+images_with_usable_timestamp,4000.0
+leaf_groups,2070.0
+mean_images_per_leaf_group,1.93
+singleton_leaf_groups_pct,61.3
+sessions,23.0

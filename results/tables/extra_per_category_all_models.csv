@@ -1,0 +1,29 @@
+category,precision,recall,f1,f1_sd_folds,f1_min_fold,support_pooled,status,model
+Cutting Weevil,0.897,0.991,0.942,0.174,0.541,2500,borderline,VGG-16
+Healthy,0.843,0.993,0.912,0.109,0.7,2500,borderline,VGG-16
+Bacterial Canker,0.746,0.957,0.838,0.33,0.26,2500,borderline,VGG-16
+Anthracnose,0.683,0.766,0.722,0.283,0.177,2500,not reliable,VGG-16
+Die Back,0.883,0.603,0.716,0.294,0.237,2500,not reliable,VGG-16
+Powdery Mildew,0.579,0.713,0.639,0.196,0.154,2500,not reliable,VGG-16
+Sooty Mould,0.208,0.083,0.119,0.194,0.0,2500,not reliable,VGG-16
+Cutting Weevil,0.936,0.994,0.964,0.202,0.385,2500,reliable,ResNet-50
+Healthy,0.925,1.0,0.961,0.054,0.878,2500,reliable,ResNet-50
+Die Back,0.967,0.721,0.826,0.263,0.135,2500,borderline,ResNet-50
+Anthracnose,0.674,0.892,0.767,0.199,0.324,2500,not reliable,ResNet-50
+Bacterial Canker,0.81,0.726,0.765,0.323,0.094,2500,not reliable,ResNet-50
+Powdery Mildew,0.52,0.726,0.606,0.252,0.058,2500,not reliable,ResNet-50
+Sooty Mould,0.163,0.081,0.108,0.191,0.0,2500,not reliable,ResNet-50
+Cutting Weevil,0.99,1.0,0.995,0.031,0.909,2500,reliable,ViT-B/16
+Bacterial Canker,0.95,0.868,0.907,0.102,0.693,2500,borderline,ViT-B/16
+Healthy,0.785,0.992,0.877,0.145,0.639,2500,borderline,ViT-B/16
+Die Back,0.97,0.723,0.829,0.231,0.284,2500,borderline,ViT-B/16
+Anthracnose,0.743,0.838,0.788,0.185,0.341,2500,not reliable,ViT-B/16
+Powdery Mildew,0.43,0.635,0.513,0.229,0.106,2500,not reliable,ViT-B/16
+Sooty Mould,0.181,0.084,0.114,0.185,0.0,2500,not reliable,ViT-B/16
+Cutting Weevil,0.98,0.993,0.986,0.041,0.87,2500,reliable,Swin-T
+Healthy,0.789,1.0,0.882,0.118,0.711,2500,borderline,Swin-T
+Bacterial Canker,0.835,0.924,0.877,0.245,0.269,2500,borderline,Swin-T
+Die Back,0.969,0.658,0.784,0.309,0.066,2500,not reliable,Swin-T
+Anthracnose,0.703,0.88,0.782,0.26,0.223,2500,not reliable,Swin-T
+Powdery Mildew,0.553,0.752,0.638,0.238,0.267,2500,not reliable,Swin-T
+Sooty Mould,0.228,0.074,0.111,0.18,0.0,2500,not reliable,Swin-T
